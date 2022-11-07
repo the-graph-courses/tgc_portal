@@ -1,0 +1,406 @@
+/* Feedback button change*/ 
+
+.button-box .done {
+	 background-color: #4DB3C4;
+	 border: none;
+}
+
+
+/* Kill the links in the Report card */ 
+
+td.ld-gb-report-card-grades-column-name * {
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
+    color: #455161;
+}
+
+
+
+/*change quiz icon */ 
+
+.learndash-wrapper .ld-item-list-item-quiz .ld-item-name .ld-item-title:before, .bb-icon-question:before{ 
+	content: '\eeec';
+}
+
+/*change quiz icon */ 
+
+.learndash-wrapper .ld-table-list-items .ld-table-list-item .ld-table-list-item-quiz .ld-quiz-complete~.ld-item-title:before{ 
+	content: '\eeec';
+}
+
+.learndash-wrapper .learndash_content_wrap .ld-table-list-item-quiz .ld-item-title:before{
+		content: '\eeec';
+}
+
+.learndash-wrapper .ld-item-list-item-expanded .ld-table-list-items .ld-table-list-item .ld-table-list-item-quiz .ld-item-title:before {
+
+		content: '\eeec';
+
+}
+
+/*remove dropdown on profile page */ 
+
+.page-id-31111 .ld-expand-button {
+	display:none;
+}
+
+
+
+/* Customize gradebook */ 
+.ld-gb-report-card-title {
+	  font-weight: 500;
+	  font-size: 1.4em;
+}
+
+.ld-gb-report-card .ld-gb-report-card-section-title {
+    font-weight: 700;
+	  font-size: 1.2em;
+    line-height: 3em;
+    cursor: pointer;
+    color: #4DB3C4;
+}
+
+
+.ld-gb-report-card-overall .ld-gb-report-card-section-title {
+	    color: #455161 !important;
+	    cursor: default !important;
+
+
+}
+
+.ld-gb-report-card {
+	
+	width: 100%;
+}
+
+.ld-gb-report-card .ld-gb-report-card-component-container {
+    display: table-cell;
+    border-top: 1px solid #F1F1F1;
+}
+
+/* percentage grade section */
+
+.ld-gb-report-card .ld-gb-report-card-section-grade {
+    width: 5em;
+    font-size: 1.7em;
+    font-weight: 300;
+	  margin: .0em .1em .0em .2em;
+   	border-radius: 0.2em;
+    line-height: 2em;
+    font-family: sans-serif;
+	
+}
+
+
+/* Remove the "topic content" header sentence */ 
+
+
+.learndash-wrapper .ld-table-list .ld-table-list-header {
+    padding: 0;
+    display: none;
+}
+
+/* remove mark for review option  */ 
+
+.learndash .wpProQuiz_content .wpProQuiz_reviewLegend .learndash-quiz-review-legend-item-review,
+.learndash .wpProQuiz_reviewButtons input[name="review"] {
+    display: none !important;
+}
+
+.learndash .wpProQuiz_content .wpProQuiz_reviewLegend .learndash-quiz-review-legend-item-review,
+.learndash .wpProQuiz_reviewButtons input[name="quizSummary"] 
+element.style {
+    float: left; !important
+} 
+
+/*remove strikethrough from completed lessons */ 
+.learndash-wrapper .ld-table-list .ld-table-list-items div.ld-table-list-item a.ld-table-list-item-preview.learndash-complete .ld-topic-title {
+text-decoration: none !important;
+}
+
+.bb-completed-item {
+  text-decoration: none !important;
+}
+
+.learndash-wrapper .ld-table-list-item.learndash-complete .ld-item-title > span:first-child {
+  text-decoration: none !important;
+}
+.learndash-wrapper .learndash-complete .ld-item-list-item-preview .ld-item-title > span:first-child {
+  text-decoration: none !important;
+}
+
+
+/* Hide learndash course search since students don't have enough courses for search to make sense */ 
+
+.learndash-wrapper #ld-profile .ld-item-list .ld-section-heading .ld-item-list-actions .ld-search-prompt {
+	display:none
+}
+
+/* Make the expand all text on the course homepage white */ 
+
+.learndash-wrapper .ld-expand-button {
+	  padding: 0.2em 0em 0.2em 0.2em !important ;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+
+/* Change color of individual expand course buttons on the course page */ 
+
+.learndash-wrapper .ld-item-list .ld-item-list-item.ld-item-lesson-item .ld-item-list-item-preview .ld-item-details .ld-icon-arrow-down {
+	    color: #a6a6a6;
+	size: larger
+
+}
+
+.learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
+    background-color: transparent !important;
+}
+
+
+
+/* Remove the headers from the gamipress points table on learner dashboard. Last changed 2022-09-11 */ 
+
+table.gamipress-earnings-table thead {
+       visibility: collapse 
+}
+
+
+
+
+/* Remove the headers from the gamipress points table on learner dashboard. Last changed 2022-09-11 */ 
+
+.ld-icon-arrow-down .ld-icon .ld-primary-background {
+       color: #ffffff
+}
+
+
+
+/* Remove the text before quizzes that says "Lesson Content"
+.learndash-wrapper .ld-table-list .ld-table-list-header {
+		display: none
+}
+
+*/ 
+
+
+/* Remove the font printed under open quizzes about when they will be graded. Needed so that the feedback quizzes make sense*/ 
+
+.learndash-wrapper .wpProQuiz_content .graded-disclaimer {
+    font-size: .85em;
+    font-style: italic;
+    margin-top: 1em;
+    display: none;
+}
+
+
+
+
+/* Remove the ability to sort courses and change the view of courses. Needed since there are so few courses at the moment*/ 
+.sfwd-courses-filters {
+    display: none;
+}
+
+.bb-secondary-list-tabs {
+    border-bottom: 0;
+    margin: 0.9375rem 0;
+    display: none;
+}
+
+/* Remove the ability to search courses. Needed since there are so few courses at the moment*/ 
+
+.bs-dir-search {
+	display:none
+}
+
+/*Reduce space before the list of quizzes*/ 
+
+.learndash_content_wrap .ld-tabs-content {
+    margin-bottom: 0px;
+}
+
+.learndash-wrapper .ld-table-list {
+    margin-top: 0px;
+}
+
+
+/*Remove silly quiz icon from buddyboss
+
+
+
+.bb-quiz-list .bb-lms-ico, .bb-type-list .bb-lms-ico, .lms-quiz-list .bb-lms-ico {
+    visibility: hidden;
+}
+
+
+/* Still trying to hide quiz icon
+
+.learndash-wrapper .ld-table-list-items .ld-table-list-item .ld-table-list-item-quiz .ld-quiz-complete~.ld-item-title:before {
+    display: none;
+}
+
+.learndash-wrapper .ld-table-list .ld-table-list-items div.ld-table-list-item a.ld-table-list-item-preview .ld-topic-title:before {
+     display: none;
+}
+
+*/
+
+
+
+
+/*Hide terms of service and privacy policy links*/
+
+.login .privacy-policy-page-link {
+    display: none; !important
+}
+
+.register-privacy-info {
+	display:none;
+}
+
+
+/*Hide learndash profile stats from learndash page. Needed because I don't know what certificates and points are for learndash */
+
+
+/* Remove points */
+.learndash-wrapper .ld-profile-summary .ld-profile-stats .ld-profile-stat:last-child {
+  visibility: collapse;
+}
+
+.learndash-wrapper .ld-profile-summary .ld-profile-stats .ld-profile-stat:nth-child(3) {
+  visibility: collapse;
+}
+
+
+/*• Remove the progress bar on the learner dashboard, which is meaningless at the moment. https://imgur.com/4dy4PYo */
+
+.learndash-wrapper #ld-profile .ld-status-icon.ld-status-in-progress {
+	visibility:collapse
+}
+
+
+
+/* Hide quiz header, quiz time. For quiz time, you really should turn it off properly from the back-end. This is makeshift solution */
+
+
+/*remove progress bar at top of lessons. Unnecessary clutter*/
+
+.learndash_content_wrap .ld-progress {
+    display: none;
+}
+
+/*Remove "completed" and "in progress" bars. Unnecessary clutter*/
+
+
+.bb-ld-status {
+    display: none;
+}
+
+/*Remove breacrumbs. Unnecessary clutter*/
+.learndash-wrapper .bb-ld-info-bar .ld-breadcrumbs {
+	display: none;
+
+}
+
+/*Increase prominence of view replies button */
+#wpdcom .wpd-comment-footer .wpd-toggle .wpd-view-replies {
+    color: #69bbca;
+    font-weight: bold;
+}
+
+/*Increase prominence of buddyboss toggle button */
+
+.buddypanel .bb-toggle-panel i {
+    color: white;
+}
+
+
+
+/*Increase prominence of like text*/
+
+
+.like-text {
+	font-weight:bold;
+}
+
+/*Hide topic completion percentage as it appears to be wrong*/
+
+
+.learndash-wrapper .ld-table-list .ld-table-list-header .ld-table-list-lesson-details {
+    display:none
+}
+
+/* Hide completeness indicators */
+
+.learndash-wrapper .ld-status.ld-status-complete {
+	display:none !important
+}
+
+.learndash-wrapper .ld-course-status.ld-course-status-enrolled {
+	display:none !important
+}
+
+.lms-topic-sidebar-progress .course-progress-wrap {
+		display:none !important
+}
+
+.bb-course-points {
+		display:none !important
+}
+
+
+.learndash-wrapper .ld-status-icon.ld-status-complete .ld-icon {
+	display:none
+}
+
+.learndash-wrapper #ld-profile .ld-item-list-item-preview .ld-status-icon {
+		display:none
+}
+
+.learndash-wrapper #ld-profile .ld-status.ld-status-progress {
+			display:none
+}
+
+/*Make course items on main page obviously clickable */
+
+
+.learndash-wrapper .ld-item-list .ld-item-list-item.ld-item-lesson-item .ld-item-list-item-preview .ld-item-name .ld-item-title {
+    color: #4BAFBF;
+   	font-weight: 500
+}
+
+.learndash-wrapper #ld-profile .ld-item-list .ld-item-list-items .ld-item-list-item .ld-item-list-item-preview .ld-course-title {
+	    color: #4BAFBF;
+   	font-weight: 600
+}
+}
+
+
+/* Make register button more prominent on login page*/
+
+body.login .login-heading a {
+    text-decoration: none;
+    color: #4c9eaa;
+    font-weight: 600;
+}
+
+.login .login-heading {
+    text-decoration: none;
+    color: #4c9eaa;
+    font-weight: 600;
+}
+
+
+.login-heading {
+    text-decoration: none;
+    color: #4c9eaa;
+    font-weight: 600;
+}
+
+/* Remove count of lessons and quizzes. Too much visual clutter. Also not that necessary since each topic has basically the same number of lessons and quizzes */
+
+.bb-lesson-head .bb-lesson-quizzes-count, .bb-lesson-head .bb-lesson-sidebar-ld-sep, .bb-lesson-head .bb-lesson-topics-count {
+    display: none;
+}
